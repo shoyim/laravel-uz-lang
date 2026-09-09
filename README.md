@@ -11,10 +11,10 @@ A complete Uzbek (`uz`) translation pack for Laravel's default `auth`, `paginati
 
 ## Talablar / Requirements
 
-| Package        | Version           |
-|----------------|--------------------|
-| PHP            | `^7.3` yoki `^8.0` |
-| Laravel        | `7.x` – `12.x`     |
+| Package        | Version              |
+|----------------|-----------------------|
+| PHP            | `^7.3` yoki `^8.0` (8.5 gacha) |
+| Laravel        | `7.x` – `13.x`        |
 
 ## O'rnatish / Installation
 
@@ -62,7 +62,7 @@ app()->setLocale('uz');
 * `auth.php` — kirish xatoliklari
 * `pagination.php` — sahifalash tugmalari
 * `passwords.php` — parolni tiklash xabarlari
-* `validation.php` — validatsiya qoidalari (Laravel 7–12 dagi barcha qoidalar, jumladan `enum`, `prohibited`, `current_password`, `ulid` kabi yangi qoidalar) va attributlar nomlari
+* `validation.php` — validatsiya qoidalari (Laravel 7–13 dagi barcha qoidalar, jumladan `enum`, `prohibited`, `current_password`, `ulid`, `list`, `base64`, `array_keys` kabi eng yangi qoidalar) va attributlar nomlari
 
 ## Testlar / Testing
 

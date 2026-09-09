@@ -54,13 +54,21 @@ jobs:
             laravel: 11.*
             testbench: 9.*
 
-          # Laravel 12 (testbench 10.*) — PHP 8.2 - 8.3
+          # Laravel 12 (testbench 10.*) — PHP 8.2 - 8.4
           - php: 8.2
             laravel: 12.*
             testbench: 10.*
-          - php: 8.3
+          - php: 8.4
             laravel: 12.*
             testbench: 10.*
+
+          # Laravel 13 (testbench 11.*) — PHP 8.3 - 8.5
+          - php: 8.3
+            laravel: 13.*
+            testbench: 11.*
+          - php: 8.5
+            laravel: 13.*
+            testbench: 11.*
 
     name: PHP ${{ matrix.php }} - Laravel ${{ matrix.laravel }}
 
