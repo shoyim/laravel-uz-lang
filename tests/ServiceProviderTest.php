@@ -22,25 +22,14 @@ class ServiceProviderTest extends TestCase
         $this->assertStringEndsWith('lang', $paths[0]);
     }
 
-    /**
-     * @dataProvider langFileProvider
-     */
-    public function test_lang_files_return_valid_arrays(string $file): void
+    public function test_lang_files_return_valid_arrays(): void
     {
-        $translations = require __DIR__."/../lang/uz/{$file}.php";
+        foreach (['auth', 'pagination', 'passwords', 'validation'] as $file) {
+            $translations = require __DIR__."/../lang/uz/{$file}.php";
 
-        $this->assertIsArray($translations);
-        $this->assertNotEmpty($translations);
-    }
-
-    public static function langFileProvider(): array
-    {
-        return [
-            'auth' => ['auth'],
-            'pagination' => ['pagination'],
-            'passwords' => ['passwords'],
-            'validation' => ['validation'],
-        ];
+            $this->assertIsArray($translations, "'{$file}.php' should return an array.");
+            $this->assertNotEmpty($translations, "'{$file}.php' should not be empty.");
+        }
     }
 
     public function test_validation_file_has_no_untranslated_default_strings(): void
