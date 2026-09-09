@@ -1,9 +1,9 @@
 # Laravel Uzbek Language Pack
 
 [![Tests](https://github.com/shoyim/laravel-uz-lang/actions/workflows/tests.yml/badge.svg)](https://github.com/shoyim/laravel-uz-lang/actions/workflows/tests.yml)
-[![Total Downloads](https://poser.pugx.org/shoyim/laravel-uz-lang/d/total.svg)](https://packagist.org/packages/shoyim/laravel-uz-lang)
-[![Latest Stable Version](https://poser.pugx.org/shoyim/laravel-uz-lang/v/stable.svg)](https://packagist.org/packages/shoyim/laravel-uz-lang)
-[![License](https://poser.pugx.org/shoyim/laravel-uz-lang/license.svg)](https://packagist.org/packages/shoyim/laravel-uz-lang)
+[![Total Downloads](https://poser.pugx.org/shoyim/laravel-lang/d/total.svg)](https://packagist.org/packages/shoyim/laravel-lang)
+[![Latest Stable Version](https://poser.pugx.org/shoyim/laravel-lang/v/stable.svg)](https://packagist.org/packages/shoyim/laravel-lang)
+[![License](https://poser.pugx.org/shoyim/laravel-lang/license.svg)](https://packagist.org/packages/shoyim/laravel-lang)
 
 Laravel uchun rasmiy o'zbekcha (`uz`) til paketi — autentifikatsiya, sahifalash, parolni tiklash va validatsiya xabarlarining to'liq tarjimasi.
 
@@ -21,7 +21,7 @@ A complete Uzbek (`uz`) translation pack for Laravel's default `auth`, `paginati
 Composer orqali o'rnating:
 
 ```bash
-composer require shoyim/laravel-uz-lang
+composer require shoyim/laravel-lang
 ```
 
 Paket Laravel'ning **package auto-discovery** funksiyasidan foydalanadi — hech qanday qo'shimcha sozlash shart emas. Agar auto-discovery o'chirilgan bo'lsa, service provider'ni qo'lda `config/app.php` ga qo'shing:

@@ -12,10 +12,13 @@ All notable changes to `laravel-uz-lang` will be documented in this file.
 - `.gitattributes` to keep dev-only files out of dist archives.
 
 ### Changed
-- Composer package name changed from `shoyim/laravel-lang` to `shoyim/laravel-uz-lang` to match the repository.
 - Namespace changed from `LaravelLang` to `LaravelUzLang` for clarity and to avoid collisions with other packages.
 - Composer package `type` changed from `project` to `library`.
 - `composer.json` was missing a PSR-4 `autoload` section entirely, meaning the `ServiceProvider` class could never actually be autoloaded — fixed.
 
 ### Fixed
 - Translated the remaining English string in `validation.php` (`multiple_of`).
+- Disabled Composer 2.9+'s `policy.advisories.block` (root-package-only setting) so CI can install older Laravel versions that carry unresolved security advisories in Packagist's data, without affecting consumers of the package.
+
+### Note
+- The Composer package name briefly changed to `shoyim/laravel-uz-lang` to match the repository, then was reverted back to `shoyim/laravel-lang` because that is the name already registered on Packagist — changing it broke Packagist's auto-update ("package is in a broken state").

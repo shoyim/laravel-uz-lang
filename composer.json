@@ -1,5 +1,5 @@
 {
-    "name": "shoyim/laravel-uz-lang",
+    "name": "shoyim/laravel-lang",
     "description": "O'zbek tili uchun Laravel lokalizatsiya paketi (Uzbek language pack for Laravel)",
     "type": "library",
     "keywords": [
