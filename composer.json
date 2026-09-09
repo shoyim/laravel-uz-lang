@@ -1,18 +1,59 @@
 {
-    "name": "shoyim/laravel-lang",
-    "type": "project",
-    "description": "Laravel framework uchun o'zbekcha til paketi",
-    "keywords": ["laravel", "framework","language"],
+    "name": "shoyim/laravel-uz-lang",
+    "description": "O'zbek tili uchun Laravel lokalizatsiya paketi (Uzbek language pack for Laravel)",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "lang",
+        "language",
+        "localization",
+        "l10n",
+        "i18n",
+        "translation",
+        "uzbek",
+        "uz",
+        "o'zbekcha"
+    ],
+    "homepage": "https://github.com/shoyim/laravel-uz-lang",
     "license": "MIT",
-    "require": {
-        "php": "^8.1"
-    },
     "authors": [
         {
             "name": "Shoyim Obloqulov",
             "email": "obloqulovshoyim1@gmail.com"
         }
     ],
+    "support": {
+        "issues": "https://github.com/shoyim/laravel-uz-lang/issues",
+        "source": "https://github.com/shoyim/laravel-uz-lang"
+    },
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/support": "^7.0|^8.0|^9.0|^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.0|^6.0|^7.0|^8.0|^9.0|^10.0",
+        "phpunit/phpunit": "^9.0|^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelUzLang\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LaravelUzLang\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelUzLang\\ServiceProvider"
+            ]
+        }
+    },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    }
 }
